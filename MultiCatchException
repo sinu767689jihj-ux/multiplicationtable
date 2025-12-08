@@ -1,0 +1,22 @@
+public class MultipleCatchDemo1 {
+    public static void main(String[] args)
+    {
+        try{
+            throw new ArithmeticException("10/0 Exception:");
+        }catch(ArithmeticException e)
+        {
+            System.out.println("Caught the Arithmetic Exception:"+e);
+        }
+        catch(ArrayIndexOutOfBoundsException e)
+        {
+            System.out.println("Caught the Null Pointer Exception:"+e);
+        }catch(NullPointerException e)
+        {
+            System.out.println("Caught the Array Index Out of Bouunds Exception:"+e);
+        }
+        catch(NumberFormatException e)
+        {
+            System.out.println("Caught the Number Format Exception:"+e);
+        }
+    }
+}
